@@ -1,7 +1,9 @@
 :root{
-    --header-and-footer: rgb(200, 200, 200);
+    --main-green-theme: #7edd52;
+    /* --header-and-footer: rgb(231, 231, 231); */
     --white-text: #fff;
     --form-text: rgb(30, 30, 30);
+    --banner-color: rgba(0, 0, 0, 70%);
 }
 
 *, *::before, *::after{
@@ -10,10 +12,11 @@
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: rgb(175, 38, 168);
+    background-color: #ccbcbc;
     display: flex;
 }
 
@@ -23,64 +26,158 @@ body{
     position: relative;
 }
 
-#bg-img{
+.sidebar > img{
     width: 100%;
     height: 100%;
-    /* height: 100vh; */
 }
 
 #banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 70%);
+    background-color: var(--banner-color);
     position: absolute;
     top: 200px;
     height: 15%;
     width: 100%;
-    gap: 10px;
+    gap: 30px;
 }
 
-#logo{
+#banner img{
     height: 80%;
 }
 
-#odin-text{
-    color: var(--white-text);
-    font-size: 6rem;
-    /* import special font for text */
-    /* font-family: ; */
+#banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-text p:first-of-type{
+    font-size: 5rem;
+    color: var(--main-green-theme);
+}
+
+#banner-text p:last-of-type{
+    color: rgb(40, 90, 255);
+    align-self: flex-end;
+    margin-right: 10px;
+    font-size: 26px;
 }
 
 #credit{
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
     width: 100%;
     text-align: center;
     color: var(--white-text);
-    font-size: 26px;
-    background-color: rgba(0, 0, 0, 70%);
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--banner-color);
 }
+
+#credit a{
+    color: var(--white-text)
+}
+
+#credit a:hover{
+    color: rgba(15, 138, 15, 0.945);
+}
+
+
+
+
 
 .main-content{
     display: flex;
     flex-direction: column;
     width: 100%;
+
 }
 
 header{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 33%;
     width: 100%;
-    background-color: var(--header-and-footer);
+    background-color: var(--main-green-theme);
 }
 
-main{
+header div ul{
+    margin: 15px 0 20px 20px;
     display: flex;
-    height: 34%;
+    flex-direction: column;
+    list-style-type: circle;
 }
+
+header div li{
+    margin: 2px 20px;
+}
+
+header p{
+    margin: 5px 20px;
+    font-size: 1.4rem;
+    max-width: 60%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+header > p > em{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+main{
+    height: 34%;
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+}
+
+main h1{
+    margin: 20px 0 15px 20px;
+}
+
+form{
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+form > div > label{
+    margin-top: 20px;
+}
+
+
+form > div > input{
+    padding: 5px;
+    width: 300px;
+}
+
+
+/* changes the size of the input? */
+/* form > div > input:focus{
+    border: blue;
+} */
+
+
+
+
+
+
+
+
 
 footer{
     display: flex;
@@ -88,5 +185,22 @@ footer{
     justify-content: flex-start;
     align-items: flex-start;
     height: 33%;
-    background-color: var(--header-and-footer);
+    gap: 10px;
+    background-color: var(--main-green-theme);
+}
+
+footer button{
+    font-size: 1.4rem;
+    margin: 40px 0 0 40px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgba(10, 100, 10, 0.945);
+    color: var(--white-text);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+footer p{
+    margin-left: 36px;
 }

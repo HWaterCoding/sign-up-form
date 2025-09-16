@@ -10,48 +10,70 @@
     <div class="sidebar">
         <img src="images/odin-project-photo.avif" alt="Pretty Plant" id="bg-img">
         <div id="banner">
-            <img src="images/odin-logo.png" alt="The Odin Project Logo" id="logo">
-            <p id="odin-text">ODIN</p>
+            <img src="images/nutriboom.jpg" alt="The Odin Project Logo">
+            <div id="banner-text">
+                <p id="title">NutriBoom!</p>
+                <p id="boom">Boom Boom!</p>
+            </div>
         </div>
         <p id="credit">Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
     </div>
 
     <div class="main-content">
         <header>
+            <div>
+                <ul>
+                    <h1>Do you want to:</h1>
+                    <li>Increase your amount of healthy?</li>
+                    <li>Reach your highest nutri-level possible?</li>
+                    <li>Increase and/or decrease your amount of amino acids?</li>
+                    <li>Capitalize on this conical-tiered multi-flow-through medical marketing entity?</li>
+                </ul>
+                <p>Then this is the perfect opportunity for you.</p>
+            </div>
             <p>Sign up now for this totally legitimate service that will make all your dreams come true!
-                Doesn't this page look official? That's because it is! Don't be suspicious! Join now!
+                Doesn't this page look official? That's because it is! <strong>Don't be suspicious!</strong> Join now!
             </p>
             <p>We <em>don't</em> guarantee customer satisfaction.</p>
         </header>
 
         <main>
+            <h1>Sign up now and start winning ASAP!</h1>
             <form action="" method="">
-                <h1>Sign up now and start winning ASAP!</h1>
-
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
-        
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
-        
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-        
-                <label for="phone-number">Phone Number</label>
-                <input type="number" name="phone-number" id="phone-number">
-        
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-        
-                <label for="password-confirmation">Password confirmation</label>
-                <input type="password" name="password-confirmation" id="password-confirmation">
+                
+                <div id="form-row1">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" required>
+            
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+            
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+            
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" required>
+                </div>
+                <div id="form-row2">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+            
+                    <label for="password-confirmation">Password confirmation</label>
+                    <input type="password" name="password-confirmation" id="password-confirmation" required>
+    
+                    <label for="credit-card">Credit Card Number</label>
+                    <input type="tel" name="credit-card" id="credit-card" required>
+    
+                    <label for="ssn">Social Security Number</label>
+                    <input type="tel" name="ssn" id="ssn" required>
+                </div>
+            </main>
+            
+                <footer>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </footer>
             </form>
-        </main>
-
-        <footer>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </footer>
     </div>
 
     
