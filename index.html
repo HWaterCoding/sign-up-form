@@ -8,12 +8,11 @@
 </head>
 <body>
     <div class="sidebar">
-        <img src="images/odin-project-photo.avif" alt="Pretty Plant" id="bg-img">
         <div id="banner">
             <img src="images/nutriboom.jpg" alt="The Odin Project Logo">
             <div id="banner-text">
-                <p id="title">NutriBoom!</p>
-                <p id="boom">Boom Boom!</p>
+                <p>NutriBoom!</p>
+                <p>Boom Boom!</p>
             </div>
         </div>
         <p id="credit">Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
@@ -39,36 +38,34 @@
 
         <main>
             <h1>Sign up now and start winning ASAP!</h1>
-            <form action="" method="">
-                
+            <form action="" method="">                
                 <div id="form-row1">
                     <label for="first-name">First Name</label>
                     <input type="text" name="first-name" id="first-name" required>
             
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
-            
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="fakename123@email.com" required>
             
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phone-number" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="15" required>
+                    
+                    <label for="credit-card">Credit Card Number</label>
+                    <input type="tel" name="credit-card" id="credit-card" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
                 </div>
                 <div id="form-row2">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" required>
+
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="(XXX)-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             
                     <label for="password-confirmation">Password confirmation</label>
-                    <input type="password" name="password-confirmation" id="password-confirmation" required>
-    
-                    <label for="credit-card">Credit Card Number</label>
-                    <input type="tel" name="credit-card" id="credit-card" required>
+                    <input type="password" name="password-confirmation" id="password-confirmation" minlength="8" maxlength="15" required>
     
                     <label for="ssn">Social Security Number</label>
-                    <input type="tel" name="ssn" id="ssn" required>
+                    <input type="tel" name="ssn" id="ssn" placeholder="xxx-xxx-xxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
                 </div>
             </main>
-            
                 <footer>
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href="">Log in</a></p>

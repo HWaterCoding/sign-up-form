@@ -1,8 +1,6 @@
 :root{
-    --main-green-theme: #7edd52;
-    /* --header-and-footer: rgb(231, 231, 231); */
+    --main-green-theme: #a8d892;
     --white-text: #fff;
-    --form-text: rgb(30, 30, 30);
     --banner-color: rgba(0, 0, 0, 70%);
 }
 
@@ -16,19 +14,19 @@
 }
 
 body{
-    background-color: #ccbcbc;
+    background-color: #d6e4d3;
     display: flex;
 }
 
+/* sidebar */
 .sidebar{
     width: 40%;
+    min-width: 350px;
     height: 100vh;
     position: relative;
-}
-
-.sidebar > img{
-    width: 100%;
-    height: 100%;
+    background-image: url(images/odin-project-photo.avif);
+    background-size: cover;
+    background-position: center;
 }
 
 #banner{
@@ -88,12 +86,11 @@ body{
 
 
 
-
+/* header  */
 .main-content{
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
 
 header{
@@ -105,22 +102,31 @@ header{
     background-color: var(--main-green-theme);
 }
 
+header h1{
+    margin-bottom: 10px;
+}
+
 header div ul{
-    margin: 15px 0 20px 20px;
+    margin: 15px 0 20px 40px;
     display: flex;
     flex-direction: column;
     list-style-type: circle;
 }
 
 header div li{
-    margin: 2px 20px;
+    margin: 2px 40px;
 }
 
 header p{
-    margin: 5px 20px;
+    margin: 5px 40px;
     font-size: 1.4rem;
     max-width: 60%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+header > p > strong{
+    font-weight: bolder;
+    font-size: 1.6rem;
 }
 
 header > p > em{
@@ -129,25 +135,45 @@ header > p > em{
 
 
 
+/* inputs */
+input{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 1px solid rgb(85, 85, 94);
+    outline: none;
+    border-color: rgb(85, 85, 94);
+    box-shadow: 2px 2px 5px rgb(104, 104, 116);
+}
+
+input:valid{
+    border-color: green;
+    box-shadow: 2px 2px 3px green;
+}
+
+input[type="password"]:invalid{
+    border-color: red;
+    box-shadow: 2px 2px 1px rgb(221, 17, 17);
+}
 
 
-
-
+/* main section */
 main{
     height: 34%;
     display: flex;
     flex-direction: column;
-    /* width: 60%; */
 }
 
 main h1{
-    margin: 20px 0 15px 20px;
+    margin: 20px 0 0 40px;
 }
 
 form{
     display: flex;
     gap: 50px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 form > div{
@@ -157,6 +183,7 @@ form > div{
 
 form > div > label{
     margin-top: 20px;
+    font-family: cursive;
 }
 
 
@@ -165,20 +192,7 @@ form > div > input{
     width: 300px;
 }
 
-
-/* changes the size of the input? */
-/* form > div > input:focus{
-    border: blue;
-} */
-
-
-
-
-
-
-
-
-
+/* footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -201,6 +215,23 @@ footer button{
     border-radius: 10px;
 }
 
+footer button:hover{
+    background-color: rgba(14, 134, 14, 0.945);    
+}
+
+footer button:active{
+    background-color: rgba(51, 184, 51, 0.945);
+}
+
 footer p{
     margin-left: 36px;
+}
+
+footer p a{
+    color: rgb(3, 58, 3);
+    font-weight: 800;
+}
+
+footer p a:active{
+    color: rgb(236, 50, 26);
 }
